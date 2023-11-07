@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+*{
+    font-family: 'poppins';
+}
 *{
     margin: 0;
     padding: 0;
@@ -88,8 +92,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 215vh;
-    width: 218vw;
+    height: 0vh;
+    width: 0vw;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -187,61 +191,9 @@ body{
     
     }
 }
-@media (max-width: 620px) and (max-height: 320px){
-    body{
-        background-image: url(./assets/bg.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    #score {
-        font-size: 30px;
-        font-weight: 900;
-        padding-top: 5px;
-        padding-bottom: 0px;
-    }
-    .gameCard{
-        border: 3px solid #F9C446;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 5px;
-    }
-    #container{
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 80px 1fr;
-        grid-template-rows: 270px;
-    }
-    #vsimg{
-        height: 70%;
-    }
-    .buttons img{
-        height: 50px;
-    }
-    .hand{
-        display: flex;
-        height: 160px;
-    }
-    .hand img{
-        height: 100%;
-    }
-    #rotate{
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0vh;
-        width: 0vw;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        visibility: hidden;
-        flex-direction: column;
-    
-    }
-}
 
-@media (max-width: 620px) and (max-height: 376px){
+
+@media (max-width: 620px) and (max-height: 380px){
     body{
         background-image: url(./assets/bg.png);
         background-size: cover;
@@ -320,7 +272,7 @@ body{
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 80px 1fr;
-        grid-template-rows: 340px;
+        grid-template-rows: 321px;
     }
     #vsimg{
         height: 70%;
@@ -331,6 +283,60 @@ body{
     .hand{
         display: flex;
         height: 220px;
+    }
+    .hand img{
+        height: 100%;
+    }
+    #rotate{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0vh;
+        width: 0vw;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        visibility: hidden;
+        flex-direction: column;
+    
+    }
+}
+
+@media (max-width: 621px) and (max-height: 320px){
+    body{
+        background-image: url(./assets/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #score {
+        font-size: 30px;
+        font-weight: 900;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    .gameCard{
+        border: 3px solid #F9C446;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-top: 5px;
+    }
+    #container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 80px 1fr;
+        grid-template-rows: 270px;
+    }
+    #vsimg{
+        height: 70%;
+    }
+    .buttons img{
+        height: 50px;
+    }
+    .hand{
+        display: flex;
+        height: 160px;
     }
     .hand img{
         height: 100%;
