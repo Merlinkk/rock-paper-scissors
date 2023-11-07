@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div id="score">
+        <span id="playerscore">0</span>
+        <span> - </span>
+        <span id="compscore">0</span>
+    </div>
+
+    <div id="container">
+        <div class="gameCard">
+            <h3>You</h3>
+            <div class="hand">
+                <img src="" id="rpcP" height="250px">
+            </div>
+            <div class="buttons" id="player">
+                <img id="rock-logo" class="btn" src="./assets/rock-logo.png" alt="">
+                <img id="paper-logo" class="btn" src="./assets/paper-logo.png" alt="">
+                <img id="scissors-logo" class="btn" src="./assets/scissors-logo.png" alt="">
+            </div>
+        </div>
+
+        <div style="display:flex;justify-content:center" id="vsimg">
+            <img src="./assets/vs.png" height="120%">
+        </div>
+
+        <div class="gameCard">
+            <h3>Comp</h3>
+            <div class="hand" id="comp">
+                <img src="" id="rpcC" height="250px">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex" id="result">
+        <div id="message"></div>
+        <div id="button">Play again</div>
+    </div>
+    <div class="flex" id="rotate">
+        <div><lottie-player
+            src="https://lottie.host/4862dc5f-9d62-4aac-81a6-5f3ebe972de3/0PmQU7Ntae.json"
+            background="#000000"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player></div>
+    </div>
+    <script src="./game.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>
