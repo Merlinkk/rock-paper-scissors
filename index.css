@@ -93,7 +93,10 @@ h1{
     }
 }
 
-@media(max-width: 426px) and (max-height: 620px){
+@media(max-width: 426px) and (max-height: 720px){
+    body{
+        height: 100vh;
+    }
     #game-img img{
         height: 100%;
         margin-right: 0;
